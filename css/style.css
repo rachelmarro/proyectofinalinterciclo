@@ -1,55 +1,94 @@
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #e4caad; /* tono café claro */
-  color: #170f0e; /* marrón oscuro */
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f4e1c1;
+    color: #3d2415;
 }
 
-/* Encabezado */
 header {
-  background-color: #6c482f; /* café intenso */
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 2rem;
+    background-color: #71452c;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+    font-size: 30px;
+    margin-bottom: 8px;
 }
 
-/* Secciones */
+header p {
+    font-size: 14px;
+}
+
 main {
-  padding: 2rem;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-.bienvenida, .menu {
-  margin-bottom: 2rem;
+section {
+    margin-bottom: 35px;
 }
 
-.menu ul {
-  list-style: none;
+h2 {
+    margin-bottom: 12px;
+    color: #5a351f;
 }
 
-.menu li {
-  background: #fff;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.bienvenida p {
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-/* Footer */
+.imagen-principal {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 380px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.menu-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.menu-lista div {
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.menu-lista h3 {
+    margin-bottom: 8px;
+    color: #71452c;
+}
+
 footer {
-  background-color: #6f4e37;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+    background-color: #71452c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+    .menu-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-principal {
+        height: 250px;
+    }
 }
