@@ -1,65 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard - Mi Portal de Aprendizaje</title>
-   <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="contenedor-maestro">
-        <!-- Panel Lateral (Sidebar) -->
-        <aside class="sidebar">
-            <div class="perfil-estudiante">
-                <!-- 1. Logo arriba del nombre del estudiante -->
-                <img src="img/UNICAES_Logo.png" alt="Logo de la Academia" class="logo-institucion">
 
-                <p class="etiqueta-estudiante">Estudiante:</p>
-                <h2 class="nombre-estudiante">Yajaira Rachel Marroquin</h2>
+    <header>
+        <h1>Velvet Coffee</h1>
+        <p>Tu rincón de café con estilo</p>
+    </header>
+
+    <main>
+
+        <section class="bienvenida">
+            <h2>Bienvenido</h2>
+            <p>
+                Disfruta de nuestros cafés artesanales y postres caseros
+                en un ambiente acogedor.
+            </p>
+
+            <img src="img/Foto25.jpg" alt="Velvet Coffee" class="imagen-principal">
+        </section>
+
+        <section>
+            <h2>Menú</h2>
+
+            <div class="menu-lista">
+                <div>
+                    <h3>Espresso</h3>
+                    <p>$2.00</p>
+                </div>
+
+                <div>
+                    <h3>Cappuccino</h3>
+                    <p>$2.50</p>
+                </div>
+
+                <div>
+                    <h3>Latte</h3>
+                    <p>$3.00</p>
+                </div>
             </div>
+        </section>
 
-            <nav class="menu-navegacion">
-                <ul>
-                    <li>Mis Cursos</li>
-                    <li>Analíticas</li>
-                    <li>Certificados</li>
-                </ul>
-            </nav>
-        </aside>
+    </main>
 
-        <!-- Área Principal de Contenido -->
-        <main class="panel-cursos">
-            <!-- Tarjeta 1 -->
-            <article class="tarjeta">
-                <img src="img/Foto25.jpg" alt="Estudiante programando" class="foto-tarjeta">
-                <h3>HTML5 Semántico</h3>
-                <!-- 2. Párrafo descriptivo según la fuente [1] -->
-                <p class="descripcion-curso">Aprende a estructurar sitios con etiquetas que dan significado al contenido,
-                    facilitando el rastreo de buscadores y la accesibilidad.</p>
-                <button>Ingresar</button>
-            </article>
+    <footer>
+        <p>© 2026 Velvet Coffee</p>
+    </footer>
 
-            <!-- Tarjeta 2 -->
-            <article class="tarjeta">
-                <img src="img/images.jpg" alt="Estudiante diseñando" class="foto-tarjeta">
-                <h3>CSS Moderno</h3>
-                <!-- 2. Párrafo descriptivo según la fuente [2] -->
-                <p class="descripcion-curso">Domina el lenguaje encargado de la presentación visual para separar la estructura
-                    del diseño estético y profesional.</p>
-                <button>Ingresar</button>
-            </article>
-
-            <!-- Tarjeta 3 -->
-            <article class="tarjeta">
-                <img src="img/professional-business-team-engaged-collaborative-260nw-2547697059.webp" alt="Estudiante analizando código" class="foto-tarjeta">
-                <h3>Grid y Flexbox</h3>
-                <!-- Párrafo descriptivo según las fuentes [3, 4] -->
-                <p class="descripcion-curso">Implementa sistemas de maquetación para construir layouts flexibles en una
-                    misma página y arquitecturas visuales en dos dimensiones.</p>
-                <button>Ingresar</button>
-            </article>
-        </main>
-    </div>
 </body>
 </html>
-```
