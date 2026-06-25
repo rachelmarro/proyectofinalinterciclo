@@ -10,48 +10,236 @@
 <body>
 
     <header>
-        <h1>Velvet Coffee</h1>
-        <p>Tu rincón de café con estilo</p>
+        <div class="contenedor encabezado">
+
+            <a href="#inicio" class="logo">
+                <img src="img/logo.png" alt="Logo Velvet Coffee">
+            </a>
+
+            <nav>
+                <a href="#inicio" class="activo">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+        </div>
     </header>
 
     <main>
 
-        <section class="bienvenida">
-            <h2>Bienvenido</h2>
-            <p>
-                Disfruta de nuestros cafés artesanales y postres caseros
-                en un ambiente acogedor.
-            </p>
+        <section class="hero" id="inicio">
 
-            <img src="img/Foto25.jpg" alt="Velvet Coffee" class="imagen-principal">
+            <div class="hero-texto">
+                <h1>Tu rincón de<br>café con estilo</h1>
+
+                <div class="linea-decorativa">
+                    <span></span>
+                    ✦
+                    <span></span>
+                </div>
+
+                <p>
+                    Disfruta de nuestros cafés artesanales y postres caseros
+                    en un ambiente acogedor.
+                </p>
+
+                <a href="#menu" class="boton-menu">☕ Ver menú</a>
+            </div>
+
+            <div class="hero-imagen">
+                <img src="img/imagen1.jpeg" alt="Café Velvet Coffee">
+            </div>
+
         </section>
 
-        <section>
-            <h2>Menú</h2>
+        <section class="menu" id="menu">
 
-            <div class="menu-lista">
-                <div>
-                    <h3>Espresso</h3>
-                    <p>$2.00</p>
-                </div>
+            <div class="titulo-seccion">
+                <h2>Nuestro menú destacado</h2>
 
-                <div>
-                    <h3>Cappuccino</h3>
-                    <p>$2.50</p>
-                </div>
-
-                <div>
-                    <h3>Latte</h3>
-                    <p>$3.00</p>
+                <div class="linea-decorativa centrada">
+                    <span></span>
+                    ✦
+                    <span></span>
                 </div>
             </div>
+
+            <div class="carrusel-menu">
+
+                <button class="flecha-menu izquierda" onclick="moverCarrusel(-1)">
+                    ❮
+                </button>
+
+                <div class="ventana-carrusel">
+
+                    <div class="menu-lista" id="menuLista">
+
+                        <article class="tarjeta-menu">
+                            <img src="img/imagen1.jpeg" alt="Espresso">
+
+                            <div class="info-menu">
+                                <h3>Espresso</h3>
+                                <p>Intenso y aromático, el clásico que nunca falla.</p>
+                                <strong>$2.00</strong>
+                            </div>
+                        </article>
+
+                        <article class="tarjeta-menu">
+                            <img src="img/imagen2.jpeg" alt="Cappuccino">
+
+                            <div class="info-menu">
+                                <h3>Cappuccino</h3>
+                                <p>Suave espuma de leche y el balance perfecto de sabor.</p>
+                                <strong>$2.50</strong>
+                            </div>
+                        </article>
+
+                        <article class="tarjeta-menu">
+                            <img src="img/imagen1.jpeg" alt="Latte">
+
+                            <div class="info-menu">
+                                <h3>Latte</h3>
+                                <p>Cremoso, delicado y perfecto para cualquier momento.</p>
+                                <strong>$3.00</strong>
+                            </div>
+                        </article>
+
+                        <article class="tarjeta-menu">
+                            <img src="img/imagen2.jpeg" alt="Mocha">
+
+                            <div class="info-menu">
+                                <h3>Mocha</h3>
+                                <p>Chocolate, café y leche en una mezcla deliciosa.</p>
+                                <strong>$3.50</strong>
+                            </div>
+                        </article>
+
+                        <article class="tarjeta-menu">
+                            <img src="img/imagen1.jpeg" alt="Frappé">
+
+                            <div class="info-menu">
+                                <h3>Frappé</h3>
+                                <p>Refrescante, dulce y perfecto para una tarde especial.</p>
+                                <strong>$4.00</strong>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <button class="flecha-menu derecha" onclick="moverCarrusel(1)">
+                    ❯
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="nosotros" id="nosotros">
+
+            <div class="nosotros-imagen">
+                <img src="img/imagen2.jpeg" alt="Interior de Velvet Coffee">
+            </div>
+
+            <div class="nosotros-texto">
+                <h2>Sobre nosotros</h2>
+
+                <div class="linea-decorativa">
+                    <span></span>
+                    ✦
+                    <span></span>
+                </div>
+
+                <p>
+                    En Velvet Coffee creemos que cada taza cuenta una historia.
+                    Seleccionamos granos de alta calidad y los preparamos con pasión
+                    para ofrecerte una experiencia única en un ambiente cálido y acogedor.
+                </p>
+
+                <p>
+                    Ven y haz de nuestro café tu momento favorito del día.
+                </p>
+            </div>
+
+            <div class="beneficios">
+
+                <div class="beneficio">
+                    <span>☕</span>
+                    <p>Café artesanal<br>de calidad</p>
+                </div>
+
+                <div class="beneficio">
+                    <span>♥</span>
+                    <p>Hecho con pasión<br>en cada taza</p>
+                </div>
+
+                <div class="beneficio">
+                    <span>⌂</span>
+                    <p>Ambiente cálido<br>y acogedor</p>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
-        <p>© 2026 Velvet Coffee</p>
+    <footer id="contacto">
+
+        <div class="footer-contenido">
+
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo Velvet Coffee">
+            </div>
+
+            <div class="footer-texto">
+                <p>Gracias por ser parte de nuestro rincón de café con estilo. ♥</p>
+                <small>© 2026 Velvet Coffee. Todos los derechos reservados.</small>
+            </div>
+
+            <div class="redes">
+                <a href="#">◎</a>
+                <a href="#">f</a>
+                <a href="#">⌖</a>
+            </div>
+
+        </div>
+
     </footer>
+
+    <script>
+        let posicionCarrusel = 0;
+
+        function moverCarrusel(direccion) {
+            const lista = document.getElementById("menuLista");
+            const tarjetas = document.querySelectorAll(".tarjeta-menu");
+
+            const anchoTarjeta = tarjetas[0].offsetWidth + 26;
+
+            let visibles = 3;
+
+            if (window.innerWidth <= 1000) {
+                visibles = 1;
+            }
+
+            const limite = tarjetas.length - visibles;
+
+            posicionCarrusel += direccion;
+
+            if (posicionCarrusel < 0) {
+                posicionCarrusel = limite;
+            }
+
+            if (posicionCarrusel > limite) {
+                posicionCarrusel = 0;
+            }
+
+            lista.style.transform =
+                `translateX(-${posicionCarrusel * anchoTarjeta}px)`;
+        }
+    </script>
 
 </body>
 </html>
